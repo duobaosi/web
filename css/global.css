@@ -1,0 +1,311 @@
+/*----------------------------------------
+Name: global.css
+Developed by:
+Date Created:
+Last Updated:
+Copyright:
+----------------------------------------*/
+
+/* Imports
+----------------------------------------*/
+@import url("/css/reset.css");
+@import url("/css/externalLinks.css");
+
+
+/* Elements
+----------------------------------------*/
+body
+{
+	background-color:#FFFFFF;
+	padding:0px;
+	margin:0px;
+}
+
+body, p, td, th, li
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:.875em;
+	line-height:1.5em;
+	color:#000000;
+}
+
+#mainContainer
+{
+	width:100%;
+	margin: 0px auto;
+	margin-top:-14px;
+}
+
+p
+{
+	margin: 0 0 1em 0;
+}
+
+/*--- Link Styles ---*/
+a:link, a:visited
+{
+	color:#990000;
+}
+
+a:hover, a:active
+{
+	color:#990000;
+	text-decoration:underline;
+}
+
+h1
+{
+	color:#CC0000;
+	margin:.825em 0 .5em 0;
+	font-size:2.125em;
+}
+.h1_biaoti{
+	color:#8A3A0F;
+	text-align:center;
+	font-size:22px;
+	background:url(../images/tab_unread2.gif) center center no-repeat;
+ 
+	border-top:none;
+	padding:15px
+}
+
+h2
+{
+	color:#5C8127;
+	margin:.825em 0 .5em 0;
+	font-size:1.75em;
+}
+
+h3
+{
+	color:#5C8127;
+	margin:.825em 0 .5em 0;
+	font-size:1.5em;
+}
+
+h4
+{
+	color:#5C8127;
+	margin:.825em 0 .5em 0;
+	font-size:1.25em;
+}
+
+h5
+{
+	color:#5C8127;
+	margin:.825em 0 .5em 0;
+	font-size:1.125em;
+}
+
+h6
+{
+	color:#5C8127;
+	margin:.825em 0 .5em 0;
+	font-size:1em;
+}
+
+ul
+{
+	margin-left:25px;
+	list-style-type:none;
+}
+
+ol
+{
+	margin-left:25px;
+	
+}
+
+blockquote	{margin: 0 0 18px 18px; color:#666666; font-style: italic;}
+strong		{font-weight:bold;}
+em		{font-style:italic;}
+
+/* Standard Definitions
+----------------------------------------*/
+.left 		{float:left;}
+.right 		{float:right;}
+.clearThis 	{clear:both;}
+.small		{font-size:.625em;}
+.large		{font-size:1em;}
+.soft		{color:#D3D3D3;}
+.hide		{display:none;}
+p.last		{margin-bottom:0px;}
+
+/* Header
+----------------------------------------*/
+.top_bg{ background:url(../images/top_bg.jpg)}
+#header
+{
+	width:1020px;
+	height:176px;
+	background:url(../images/top.jpg);
+	margin: 0 auto;
+	position: relative;
+	
+	
+}
+
+	/* Nav
+	----------------------------------------*/
+	ul#nav
+	{
+	position:absolute;
+	top: 135px;
+	margin-left:0px;
+	 
+ 
+	
+		
+	}
+	
+	ul#nav li {float:left; list-style-type:none; margin-left:6px; _width:80px;}
+	
+	/* Image Replacement 
+	----------------------------------------*/
+	ul#nav li a {/*Set to height of image*/
+	height:20px;
+	display:block;
+	outline:none;
+	font-size:14px;
+	color:#663300;
+	text-decoration:none;
+	margin-right:10px;
+	white-space:nowrap;
+}
+ul#nav li a:hover{color:#CC0000}
+	
+	/*Include all of your links with unique IDs. Use the correct path to the image and set the width of each image
+	li#navHome a		{background-image: url(/images/nav/home.png); width:75px;}
+	li#navWork a		{background-image: url(/images/nav/work.png); width:70px;}
+	li#navServices a	{background-image: url(/images/nav/services.png); width:68px;}
+	li#navContact a		{background-image: url(/images/nav/contact.png); width:55px;}*/
+	
+	/* CSS Rollover (Sprites) - Advanced Users!
+	----------------------------------------*/
+	
+	/*Each link must have a unique ID - Include all of your links here - Remove if not using!*/
+	li#navHome a:hover, li#navWork a:hover, li#navServices a:hover, li#navContact a:hover {background-position:0 -20px; /*Set to height of image !must be negative!*/}
+		
+/* Main Content
+----------------------------------------*/
+#mainContent
+{
+	width:1020px;
+	margin: 0 auto;
+}
+#col1{
+	float:left;
+	width:230px;
+	height:352px;
+	padding: 25px 0 0 0;
+}
+.col_top{
+	background:url(../images/left-top.jpg) no-repeat center;
+	height:40px;
+	width:223px;
+	top:0px;
+}
+.col_center{
+	background:url(../images/left-center.jpg) repeat-y 0px 0;
+	height:40px;
+	width:223px;
+	top:0px;
+ 
+}
+.col_bottom{
+	background:url(../images/left-bottom.jpg) no-repeat center;
+	height:40px;
+	width:223px;
+	bottom:0px
+}
+
+#col2{
+	float:left;
+	margin: 10px 0 20px 0;
+    
+}
+.col2_top{
+	background:url(../images/center-top.jpg) no-repeat bottom;
+	height:103px;
+	width:756px;
+}
+.col2_center{
+	background:url(../images/center-center.jpg) 1px 0;
+	width:756px;
+}
+#cse-search-box span{ color:#FF0000;}
+#cse-search-box{margin-top:20px}
+
+.col2_center_content{padding:20px; padding-left:60px;font-size:14px; color:#835934}
+
+.col2_center_content th[scope="row"]{width:300px;padding-left:30px;   }
+.col2_center_content th[scope="col"]{color:#960; border-bottom:3px solid #960;padding-top:30px; }
+.col2_center_content td { border-left:#d9b87b dotted 1px}
+  
+	.col2_bottom{
+	background:url(../images/center-bottom.jpg) no-repeat center;
+	height:63px;
+	width:756px;
+	position:relative;
+}
+
+.col2_tablelist{ width:100%; border-collapse:collapse;}
+.col2_tablelist th{
+	color:#75400b;
+	font-size:14px;
+	font-weight:700;
+	padding:10px;
+	border-bottom:1px solid #e4c58b;
+	text-align:left
+}
+.col2_tablelist td{ padding-left:10px;border-bottom:1px solid #e4c58b;text-align:left}
+
+
+.table_col{ width:223px}
+.th_width{width:60px}
+.date_red{color:#CC0000 !important;}
+
+
+.ul_style_sui{ padding:0px;margin:0px;margin-left:20px}
+.ul_style_sui li{height:30px;line-height:30px; font-size:20px; font-family:"隶书" !important; color:#9c5909; background:url(../images/li_sui.jpg) no-repeat;padding-left:35px}
+.ul_style_sui li a{font-size:20px; font-family:"隶书" !important; color:#9c5909; text-decoration:none}
+.ul_style_sui li a:hover{color:#CC0000}
+
+.col2_tablelist a{width:0;height:0px;line-height:0px; display:block; float:left}
+.col2_tablelist_noico a{ width:auto;height:auto;line-height:30px; float:none;}
+ 
+.d_onlineview{padding:15px 19px;background:url(../images/icon.gif) 0 center no-repeat;text-decoration:none}
+.d_onlineview:hover{padding:15px 19px; background:url(../images/icon.gif) 0 0 no-repeat;}
+
+.d_word{padding:15px 18px; background:url(../images/icon.gif) -38px center no-repeat;}
+.d_word:hover{padding:15px 18px; background:url(../images/icon.gif) -38px 0 no-repeat;}
+
+.d_pdf{padding:15px 19px;background:url(../images/icon.gif) -76px center no-repeat;}
+.d_pdf:hover{padding:15px 19px;background:url(../images/icon.gif) -76px 0 no-repeat;}
+
+.d_music{padding:15px 17px;background:url(../images/icon.gif) -150px center no-repeat;}
+.d_music:hover{padding:15px 17px;background:url(../images/icon.gif) -150px 0 no-repeat;}
+
+.d_avi{padding:15px 18px;background:url(../images/icon.gif) -114px center no-repeat;}
+.d_avi:hover{padding:15px 18px;background:url(../images/icon.gif) -114px 0 no-repeat;}
+
+.d_print{padding:15px 25px;background:url(../images/icon.gif) -180px center no-repeat;}
+.d_print:hover{padding:15px 25px;background:url(../images/icon.gif) -180px 0 no-repeat;}
+
+
+/* Footer
+----------------------------------------*/
+#footer
+{
+	width:100%;
+	height:49px;
+	background-color:#6A8900;
+	margin: 0 auto;
+	background:url(../images/bottom.jpg) repeat-x center;
+}
+#footer a{ color:#fff; font-weight:700}
+#footer div{ text-align:center; color:#FFFF00;font-size:13px;padding:15px 0 0}
+#footer p 
+{
+	font-size:.625em;
+}
